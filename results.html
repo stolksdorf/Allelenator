@@ -1,0 +1,73 @@
+<html>
+<head>
+	<!--
+	<script type="text/javascript" src="xo/xo.js"></script>
+	-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+
+
+	<link rel="Stylesheet" type="text/css" href="style/xo-skeleton/xo.css" />
+	<link rel="Stylesheet" type="text/css" href="style/results.css" />
+	
+	
+	<script type="text/javascript" src="js/xo.js"></script>
+	<script type="text/javascript" src="js/results.js"></script>
+
+	
+</head>
+
+<body>
+	<div class="xo-blueprint">
+		<div class="full orange center pad">
+			Search: <input id="search" type="text" name="search" />
+			
+			<span id="expandBtn" class="blue rounded click" >
+				Expand/Collaspe All
+			</span>
+		</div>
+
+		<div class="full txtgrey big center trim chunk"> 
+			Allelenator Results
+		</div>
+		
+		<div class="x3">
+			{% for allele in alleles %}
+				<div class="uniqueGene x3 rounded leaguegothic trimbottom">
+					<div class="titleCard">
+						<span class="big txtblue"> 
+							Allele-{{forloop.counter}}
+						</span>
+						
+						<span class="norm right"> 
+							<span class="txtred">{{ allele.names|length }} </span> genes 
+						</span>
+					</div>
+					
+					<div class="collapsedContent">
+						<div class="seqContainer small trim">
+							<div class="seqCanvas click">
+								<canvas id="seqCanvas{{forloop.counter0}}" width='450' height='15'>
+									Sorry! - Browser does not support Graphics Canvas
+								</canvas>
+							</div>
+															<div class="seqText code small" >
+									{{allele.sequence}}
+								</div>
+						</div>
+						
+						<div class="sampleNames rounded code">
+							{% for name in allele.names %}
+								<span class="sampleName">{{name}}</span>
+							{% endfor %}
+						</div>
+						
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+
+</body>
+</html>

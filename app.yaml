@@ -1,0 +1,23 @@
+application: allelenator-skaught
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /style
+  static_dir: style
+  
+- url: /style/xo-skeleton
+  static_dir: style/xo-skeleton
+  
+- url: /style/xo-skeleton/fonts
+  static_dir: style/xo-skeleton/fonts
+  
+- url: /js
+  static_dir: js
+  
+- url: /images
+  static_dir: images
+
+- url: .*
+  script: main.py

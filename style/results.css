@@ -1,0 +1,27 @@
+.uniqueGene{
+	border-style:solid;
+	border-width:2px;
+	border-color:grey;
+}
+
+.sequence{
+	margin-top:5px;
+	margin-bottom:5px;
+	
+}
+
+
+.sampleName{
+	float:left;
+	width:150px;
+}
+
+.lghtgrey{
+	background-color:#F0F0F0;
+}
+
+.acode{color:#00782C;}
+.ccode{color:#1021A1;}
+.gcode{color:black;}
+.tcode{color:#AB0000;}
+.ncode{color:#FF530D;}

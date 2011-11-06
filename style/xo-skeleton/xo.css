@@ -1,0 +1,121 @@
+/* ----- FONTS ----- */
+@font-face { font-family: 'LeagueGothic';  src:url('fonts/LeagueGothic.otf'); }
+@font-face { font-family: 'Chunk';         src:url('fonts/Chunk.otf'); }
+@font-face { font-family: 'Raleway';       src:url('fonts/Raleway.otf'); }
+@font-face { font-family: 'Sniglet';       src:url('fonts/Sniglet.otf'); }
+
+.leaguegothic{font-family: 'LeagueGothic'; }
+.chunk{font-family: 'Chunk'; }
+.raleway{font-family: 'Raleway'; }
+.sniglet{font-family: 'Sniglet'; }
+.helvetica{font-family:"Helvetica Neue", Helvetica,Arial, sans-serif;}
+.calibri{font-family:Calibri;}
+.code{font-family:"Courier New",Courier,monospace;}
+
+/* ----- RESET ----- */
+*{outline: 0;padding: 0;margin: 0;border: 0;}
+body, input{
+	font-family: 'LeagueGothic'; 
+	font-size:25px;
+}
+
+/* ----- BLUEPRINT ----- */
+/* container_width/#divisions - margin */
+.xo-blueprint {width:950px;margin:0 auto;overflow:auto;}
+.x1,.x2,.x3,.x4,.x5,.x6 {float:left;margin-right:10px;}
+.last {margin-right:0;clear:right;}
+.x1 {width:150px;}
+.x2 {width:310px;}
+.x3 {width:470px;}
+.x4 {width:630px;}
+.x5 {width:790px;}
+.x6, .full {width:950px;margin-right:0;}
+
+/* ----- COLORS ----- */
+.green {background-color:#6BFE5B;}       /*6BFE5B*/
+.orange{background-color:#FFB244;}       /*FFB244*/
+.red   {background-color:#FF523F;}       /*FF523F*/
+.blue  {background-color:#4FCAFF;}       /*4FCAFF*/
+.grey, .gray{background-color:#45403B;}  /*45403B*/
+.white {background-color:white;}         
+.black {background-color:black;}
+
+.txtgreen {color:#6BFE5B;}
+.txtorange{color:#FFB244;}
+.txtred   {color:#FF523F;}
+.txtblue  {color:#4FCAFF;}
+.txtgrey, .txtgray{color:#45403B;}
+.txtwhite {color:white;}
+.txtblack {color:black;}
+
+/* ----- DIV MANIPULATION ----- */
+.rounded{ 
+	-moz-border-radius: 15px;
+	border-radius: 15px; 
+	padding-left:10px; 
+	padding-right:10px;
+}
+.click{ cursor:pointer; }
+
+.w900{width:900px;}
+.w500{width:500px;}
+.w250{width:250px;}
+.w100{width:100px;}
+.w50{width:50px;}
+
+/* ---- AJAX ---- */
+.loading{
+	background-image: url('images/loading.gif');
+	display: inline;
+	height: 16px;
+	width: 16px;
+}
+
+/*---- FONT SIZES ----*/
+.biblical{font-size:150px;}
+.massive{font-size:100px;}
+.big{    font-size:55px;}
+.norm{   font-size:25px;}
+.small{  font-size:15px;}
+
+/* ---- SPACING ---- */
+.pad{  padding:15 15 15 15;}
+.trim{ margin:15 0 15 0;}
+.trimtop{margin-top:15;}
+.trimbottom{margin-bottom:15;}
+.trimleft{margin-left:15;}
+.trimright{margin-right:15;}
+.center{text-align:center;}
+.right{text-align:right;}
+.float{margin:0 auto;}
+
+/* ---- FOOTER --- */
+.xo-footer{
+	font-family:"Helvetica Neue", Helvetica,Arial, sans-serif;
+	clear:both;
+	overflow:auto;
+	padding:30px;
+	font-size:17px;
+	line-height:1.5;
+}
+.xo-footer .col{
+	float:left;
+	margin-right:50px;
+	width:200px;
+	border-right: 1px solid grey;
+}
+.xo-footer .copyright{
+	clear:both;
+	padding-top:40px;
+	font-size:10px;
+	width:400px;
+}
+.xo-footer .splash{
+	float:left;
+	width:400px;
+	padding:0px;
+}
+
+
+
+
